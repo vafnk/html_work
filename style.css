@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    background-color: wheat;
+    height: 100vh;
+}
+
+
 .wrap {
   display: flex;
   justify-content: center;
@@ -29,4 +40,8 @@
   font-size: 30px;
   font-style: arial;
   color: rgba(115, 174, 56, 0.751);
+}
+
+.h4:hover {
+    color:rgb(212, 11, 11);
 }
