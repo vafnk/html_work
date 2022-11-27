@@ -1,13 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper{
-    background-color: wheat;
-    height: 100vh;
+.wrapper {
+  background-color: wheat;
+  height: 100vh;
 }
-
 
 .wrap {
   display: flex;
@@ -43,5 +42,5 @@
 }
 
 .h4:hover {
-    color:rgb(212, 11, 11);
+  color: rgb(212, 11, 11);
 }

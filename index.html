@@ -8,53 +8,24 @@
     <title>Document</title>
   </head>
   <body>
-
-      <div class="wrapper">
-        <div class="wrap">
-        <img src="img/1.jpg" 
-        onclick="clickHandler()"  
-        class="photo" />
+    <div class="wrapper">
+      <div class="wrap">
+        <img src="img/1.jpg" onclick="clickHandler()" class="photo" />
       </div>
-
-        <div
+      <div
         class="wrap h1"
         onmouseenter="moveHandler()"
-        >Афонина Валерия Витальевна
+        onmouseout="moveHandler()"
+      >
+        Афонина Валерия Витальевна
       </div>
-
-        <input
-        id = "inputObject"
-        onchange = "changeHandler(event)"
-        />
-
-        <div class="wrap h2">Дата рождения: 25.06.2001</div>
-
-        <div class="wrap h3">Студентка Омского государственного университета им. Ф.М. Достоевского</div>
-
-        <div id = "slider" class="wrap h4">Группа МБС-901</div>  
+      <input id="inputObject" onchange="changeHandler(event)" />
+      <div class="wrap h2">Дата рождения: 25.06.2001</div>
+      <div class="wrap h3">
+        Студентка Омского государственного университета им. Ф.М. Достоевского
       </div>
-      
-      <script>
-        function clickHandler(){
-          alert("Не тыкай на меня....");
-        }
-        function moveHandler(event){
-          console.log("event",event);
-        }
-        function changeHandler(event){
-          console.log("event",event);
-          let str = document.getElementById("inputObject")
-          alert(str.value)
-        }
-
-       
-        setInterval(function () {
-          r = Math.floor(Math.random() * 256)
-          g = Math.floor(Math.random() * 256)
-          b = Math.floor(Math.random() * 256)
-          let s = document.getElementById("slider")
-	        document.getElementById('slider').style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")"}, 1000);
-
-      </script>
+      <div id="slider" class="wrap h4">Группа МБС-901</div>
+    </div>
+    <script src="/index.js" />
   </body>
 </html>
