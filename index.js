@@ -2,7 +2,10 @@ function clickHandler() {
   alert("Не тыкай на меня....");
 }
 function moveHandler(event) {
-  console.log("event", event);
+  console.log("evententer", event);
+}
+function moveHandlerOut(event) {
+  console.log("eventout", event);
 }
 function changeHandler(event) {
   console.log("event", event);
